@@ -25,4 +25,20 @@ import org.junit.Test;
 	        boolean result = userRegistration.firstName("mallepogu");
 	        Assert.assertEquals(false, result);
 	    }
+	    /**
+	     * Unit test for validating last name
+	     */
+	    @Test
+	    public void givenLastName_WhenProper_ShouldReturnTrue() {
+	        boolean result = userRegistration.lastName("Alankritha");
+	        Assert.assertEquals(true, result);
+	    }
+
+	    @Test
+	    public void givenLastName_WhenNotProper_ShouldReturnFalse() {
+	        boolean result = userRegistration.lastName("alankritha");
+	        Assert.assertEquals(false, result);
+
+	    }
 	}
+	
